@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Student"
+        android:orderInCategory="100"
+        android:title="Student"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Faculty"
+        android:orderInCategory="100"
+        android:title="Faculty"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Admission"
+        android:orderInCategory="100"
+        android:title="Admission"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

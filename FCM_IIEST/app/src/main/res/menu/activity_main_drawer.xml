@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Home" />
+        <item
+            android:id="@+id/institute"
+            android:icon="@drawable/institute"
+            android:title="Institute" />
+        <item
+            android:id="@+id/academics"
+            android:icon="@drawable/academics"
+            android:title="Academics" />
+        <item
+            android:id="@+id/admission"
+            android:icon="@drawable/admission"
+            android:title="Admission" />
+        <item
+            android:id="@+id/research"
+            android:icon="@drawable/research"
+            android:title="Research" />
+        <item
+            android:id="@+id/industry"
+            android:icon="@drawable/industry"
+            android:title="Industry" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <!--item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" /-->
+        </menu>
+    </item>
+
+</menu>
