@@ -1,0 +1,120 @@
+article h3 {
+    font-size: 2rem;
+    color: #324ab2;
+    border-bottom: 0.3rem solid;
+    padding: 1rem;
+    margin: 2rem;
+    text-transform: uppercase;
+}
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+h2,
+.h2 {
+  font-size: 35px;
+}
+ p {
+  margin: 2rem;
+}
+h1,
+.h1 {
+ 
+  color: #324ab2;
+}
+.t3-footer{
+    border-top: 0.5rem solid #ccc;
+    background-color: #efefef;
+}
+
+.t3-footer-sl .t3-module {
+    background-color: transparent;
+}
+
+.t3-footer-sl .t3-module h3.module-title {
+    color: #324ab2;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+section.t3-copyright {
+    display: none;
+}
+
+.copyright {
+    text-align: center;
+    margin: 0;
+}
+
+.custom-copyright {
+    background: #191970;
+    color: #fff;
+    z-index: 99;
+    position: relative;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+}
+
+.custom-copyright p {
+    margin: 0;
+    padding: 0.7rem 0;
+    font-size: 2rem;
+}
+
+section.t3-copyright {
+    padding: 1rem 0;
+}
+
+.iiest-footer .google-maps {
+    margin: 0;
+}
+
+.iiest-footer .google-maps iframe {
+    padding: 0.4rem;
+}
+.module_titile{
+	margin: 0 0 10px 0;!important
+	padding: 0;	!important
+
+}
+.module-ct {
+    background: transparent; 
+    color: grey;	
+    padding: 0;		
+}
+.module-ct a{
+	color: blue;
+}
+.iiest-logo img {
+    max-height: 9rem;
+    float: right;
+    border-radius: 0.5rem;
+}
+.iiest-name {
+        padding: 0;
+        text-align: center;
+}
+.name-logo-wrapper {
+    padding: 1.5rem 0;
+    position: relative;
+    background-color: #efefef;
+    z-index: 9;
+    border-bottom: 0.1rem solid #1560bd;
+}
+.name-logo-wrapper h3 {
+    font-size: 1.6rem;
+    padding: 0.2rem 0;
+}
+.name-logo-wrapper h1 {
+    font-size: 2.6rem;
+    padding: 0.2rem 0;
+}
+.name-logo-wrapper h1, .name-logo-wrapper h3, .name-logo-wrapper p {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-weight: 400;
+    color: #1560bd;
+}

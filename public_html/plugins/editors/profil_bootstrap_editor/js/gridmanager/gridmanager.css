@@ -1,0 +1,314 @@
+/*
+ * GridManager
+ *
+ *
+ * Copyright (c) 2014 Tom King
+ * Licensed under the MIT license.
+ */
+
+#gm-controls {
+  margin: 0;
+}
+#gm-controls button, #gm-controls a {
+  font-size: 14px;
+}
+#gm-canvas {
+  min-height: 100px;
+  z-index: 90;
+  position: relative;
+}
+#gm-canvas .gm-editing {
+  padding: 4px 15px;
+  min-height: 30px;
+  /*margin-left: 0;*/
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#gm-canvas .gm-editing .gm-editholder, #gm-canvas .gm-editing .gm-tools, #gm-canvas .row-holder > .gm-editing {
+  border: 1px solid #d8d8d8;
+}
+#gm-canvas .row-holder > .gm-editing {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 0px;
+}
+#gm-canvas .gm-editing .gm-editholder {
+  border-bottom: 0;
+  border-top: 0;
+}
+#gm-canvas .gm-editing .gm-tools {
+  background-color: #f7f7f7;
+  border: 1px solid #d8d8d8;
+}
+#gm-canvas .gm-editing .gm-tools:first-child {
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+#gm-canvas .gm-editing .gm-tools:last-child {
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#gm-canvas .row > .gm-tools, #gm-canvas .row-fluid > .gm-tools {
+  border: 0!important;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+#gm-canvas .row > .gm-tools:first-child, #gm-canvas .row-fluid > .gm-tools:first-child  {
+  margin-top: -5px;
+}
+#gm-canvas .row > .gm-tools, #gm-canvas .row-fluid > .gm-tools {
+  border-bottom: 1px solid #d8d8d8!important;
+}
+
+#gm-canvas .row .gm-tools-last, #gm-canvas .row-fluid .gm-tools-last {
+  border-bottom: 0!important;
+  border-top: 1px solid #d8d8d8!important;
+  margin-bottom: -5px;
+}
+#gm-canvas .gm-rowSettingsDrawer {
+  margin-bottom: 0!important;
+}
+#gm-canvas .gm-rowSettingsDrawer .btn-group, #gm-canvas .gm-colSettingsDrawer .btn-group {
+  white-space: normal;
+  margin-right: 10px;
+}
+#gm-canvas .gm-colSettingsDrawer {
+  border-bottom: 0!important;
+}
+#gm-canvas .gm-rowSettingsDrawer label, #gm-canvas .gm-colSettingsDrawer label {
+  display: block;
+}
+#gm-canvas .gm-rowSettingsDrawer .pull-left, #gm-canvas .gm-colSettingsDrawer .pull-left {
+  display: block;
+  max-width: 100%;
+}
+#gm-canvas .gm-editing-selected {
+  /*-webkit-box-shadow: inset 0px 0px 2px 0px rgba(255, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 2px 0px rgba(255, 0, 0, 1);
+    box-shadow: inset 0px 0px 2px 0px rgba(255, 0, 0, 1);*/
+}
+#gm-canvas .gm-editing-active {
+  z-index: 99;
+  position: relative;
+}
+#gm-canvas div.row.gm-editing, #gm-canvas div.row-fluid.gm-editing {
+  padding: 5px;
+  min-height: 20px;
+  margin-bottom: 10px;
+}
+#gm-canvas div.gm-tools {
+  padding: 5px;
+  min-height: 30px;
+  display: block;
+  clear: both;
+}
+#gm-canvas div.gm-tools a:hover {
+  cursor: pointer;
+}
+#gm-canvas div.gm-tools label, #gm-canvas div.gm-tools input {
+  font-size: 14px;
+}
+#gm-canvas textarea {
+  width: 100%;
+  height: 100%;
+}
+#gm-canvas .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#gm-canvas .glyphicon-trash {
+  color: #d9534f;
+}
+#gm-controls .glyphicon {
+  top: 3px;
+}
+#gm-controls .row {
+  margin-left: -15px!important;
+  margin-right: -15px!important;
+}
+#gm-controls .btn {
+  line-height: 19px;
+  padding: 3px;
+  margin: 7px 0;
+  float: left;
+}
+.editor-gridmanager * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.gm-editing .gm-tools:first-child:hover {
+  cursor: move;
+}
+.gm-editholder {
+  cursor: text;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 15px 0;
+}
+.gm-tools a:hover, .gm-tools a:focus {
+  text-decoration: none;
+}
+.editor-gridmanager-textarea, .editor-gridmanager-xtd-buttons {
+  display: none!important;
+}
+.editor-gridmanager .mce-tinymce {
+  /*min-width: 100%;*/
+  min-width: 750px;
+}
+/* frontend fix */
+
+.item-page .icons .pull-right:after {
+  clear: both!important;
+}
+.gridbase-columns {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0 5px;
+  margin-left: 0!important;
+  margin-right: 0!important;
+  zoom: 1;
+  filter: alpha(opacity=20);
+  opacity: 0.2;
+  z-index: -99;
+}
+.gridbase-col {
+  position: relative;
+  margin-bottom: 10px;
+  background: transparent;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+.gridbase-col-content {
+  width: 100%;
+  background-color: #FB9CE0;
+  height: 100%;
+}
+.gm-basegrid .glyphicon-align-justify:before {
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  /* Should be unset in IE9+ I think. */
+  filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.bg-warning {
+  background-color: #428bca!important;
+  zoom: 1;
+  filter: alpha(opacity=20);
+  opacity: 0.2;
+}
+.gm-toggleRowClass, .gm-togglecolClass {
+  margin-bottom: 15px!important;
+  font-size: 12px!important;
+  background: #da4f49!important;
+  border: none!important;
+}
+.btn-success {
+  background-color: #5cb85c!important;
+}
+.gm-toggleRowClass .glyphicon, .gm-togglecolClass .glyphicon {
+  top: 2px;
+}
+.gm-colSettingsID, .gm-rowSettingsID {
+  max-width: 100%!important;
+}
+#gm-canvas .gm-editing img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gm-toggleTinyMce {
+  top: 0;
+  position: absolute!important;
+  right: 0;
+}
+
+.row-readmore > .gm-tools {
+  background-color: #d9534f!important;
+  color: #ffffff!important;
+}
+.row-readmore > .gm-tools ~ .gm-tools {
+  background-color: #d8d8d8!important;
+}
+
+#gm-addnew .readmore {
+  background: #da4f49;
+}
+
+/* reset the form elements on admin pages, bootstrap box-sizing breaks the height and a min-height is not set */
+.admin input, .admin select, .admin .controls * {
+  box-sizing: initial;
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+}
+
+.mce-gridmanager_bootstrap {
+  background-color: #6f5499!important;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499))!important;
+  background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%)!important;
+  background-image: -o-linear-gradient(top,#563d7c 0,#6f5499 100%)!important;
+  background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%)!important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0)!important;
+  background-repeat: repeat-x!important;
+}
+
+.mce-gridmanager_bootstrap span {
+  color: #ffffff!important;
+}
+
+.mce-gridmanager_bootstrap i {
+  border-top-color: #ffffff!important;
+}
+
+.mce-gridmanager_widgetkit {
+  background-color: #ff750c!important;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#ff750c),to(#fad155))!important;
+  background-image: -webkit-linear-gradient(top,#ff750c 0,#fad155 100%)!important;
+  background-image: -o-linear-gradient(top,#ff750c 0,#fad155 100%)!important;
+  background-image: linear-gradient(to bottom,#ff750c 0,#fad155 100%)!important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff750c', endColorstr='#fad155', GradientType=0)!important;
+  background-repeat: repeat-x!important;
+  color: #ffffff!important;
+}
+
+.mce-btn-small a {
+  padding: 1px 5px;
+  font-size: 12px;
+  margin-right: 2px;
+  line-height: 20px;
+}
+
+/* size fix for lightbox */
+#sbox-window {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+}
+#sbox-content > iframe {
+  max-height: 100%;
+  max-width: initial;
+}
